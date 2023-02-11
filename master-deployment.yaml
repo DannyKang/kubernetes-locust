@@ -24,6 +24,8 @@ spec:
         role: locust-master
         app: locust-master
     spec:
+      nodeSelector:
+        intent: control-apps
       containers:
       - image: locustio/locust
         imagePullPolicy: Always
